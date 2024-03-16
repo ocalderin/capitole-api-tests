@@ -1,0 +1,32 @@
+name: Running Automated API Tests
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  run-ci:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run Test
+        run: docker build -t capitole-api-tests . && docker run -d -v ./reports:/app/reports -v ./data:/app/data capitole-api-tests
+
+      - name: Upload Reports
+        uses: actions/upload-artifact@v4.3.1
+        if: always()
+        with:    
+          name: Report   
+          path: reports/cucumber-report/*
+
+      - name: Upload Tests Output
+        uses: actions/upload-artifact@v4.3.1
+        if: always()
+        with:    
+          name: Tests Output   
+          path: data/*.txt
