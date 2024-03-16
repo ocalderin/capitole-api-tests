@@ -14,9 +14,16 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Run Test
-        run: docker build -t capitole-api-tests . && docker run -d -v ./reports:/app/reports -v ./data:/app/data capitole-api-tests
+      - name: Build Docker image
+        run: docker build -t capitole-api-tests .
 
+      - name: Run Docker container
+        run: docker run -d \
+          -v ./reports:/app/reports \
+          -v ./data:/app/data \
+          capitole-api-tests
+      
+      
       - name: Upload Reports
         uses: actions/upload-artifact@v4.3.1
         if: always()
