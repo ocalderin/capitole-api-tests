@@ -2,9 +2,7 @@ FROM amazoncorretto:17.0.9-alpine3.18
 
 WORKDIR /app
 
-#VOLUME ./reports
-#VOLUME ./data
-VOLUME
+VOLUME /app/reports
 VOLUME /app/data
 
 COPY pom.xml mvnw entrypoint.sh ./
