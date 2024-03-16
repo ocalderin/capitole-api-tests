@@ -18,11 +18,7 @@ jobs:
         run: docker build -t capitole-api-tests .
 
       - name: Run Docker container
-        run: docker run -d \
-          -v ./reports:/app/reports \
-          -v ./data:/app/data \
-          docker.io/library/capitole-api-tests
-      
+        run: docker run -v ./reports:/app/reports -v ./data:/app/data docker.io/library/capitole-api-tests
       
       - name: Upload Reports
         uses: actions/upload-artifact@v4.3.1
