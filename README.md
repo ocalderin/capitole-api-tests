@@ -66,15 +66,17 @@ Also, all the output requested by the technical test is saved in the **data** fo
 #### **GitHub Actions:**
 Additionally, you can also run the automated tests on GitHub, using GitHub Actions. To do that:
 1. Go to https://github.com/ocalderin/capitole-api-tests
-2. Click on the Actions button
+2. Create a fork
+![Captura de pantalla 2024-03-17 a las 7 58 19 p  m](https://github.com/ocalderin/capitole-api-tests/assets/12141626/02099c7c-ed5f-4332-852f-a8992f03cfac)
+3. Click on the Actions button
 ![Captura de pantalla 2024-03-17 a las 1 05 52 p  m](https://github.com/ocalderin/capitole-api-tests/assets/12141626/6f35b8f0-8664-48f0-9c8a-1827d8d92726)
-3. Select the **Running Automated API Tests** workflow
+4. Select the **Running Automated API Tests** workflow
 ![Captura de pantalla 2024-03-17 a las 1 08 17 p  m](https://github.com/ocalderin/capitole-api-tests/assets/12141626/61671463-1b32-401e-b248-2d6ca9b395e7)
-4. Run the workflow by clicking on the Run workflow button and then selecting the branch (main is used by default), and then clicking on the Run workflow button (green button)
+5. Run the workflow by clicking on the Run workflow button and then selecting the branch (main is used by default), and then clicking on the Run workflow button (green button)
 ![Captura de pantalla 2024-03-17 a las 1 09 12 p  m](https://github.com/ocalderin/capitole-api-tests/assets/12141626/7dfe449b-3ca6-4a93-ad0f-7f89d365b70d)
-5. Select the running workflow
+6. Select the running workflow
 ![Captura de pantalla 2024-03-17 a las 1 10 46 p  m](https://github.com/ocalderin/capitole-api-tests/assets/12141626/bf73f4ab-3725-41f6-8686-49652d72355d)
-6. Select the running job
+7. Select the running job
 ![Captura de pantalla 2024-03-17 a las 1 10 57 p  m](https://github.com/ocalderin/capitole-api-tests/assets/12141626/b24f9ba5-d57c-488c-a3d1-0396686ea67e)
 
 In this screen, you will be able to see all the logs related to your workflow execution
