@@ -9,7 +9,7 @@ import java.util.Map;
 public class CountPets {
     private List<PetInfo> pets;
 
-    public CountPets(List<PetInfo> pets) {
+    public CountPets(final List<PetInfo> pets) {
         this.pets = pets;
     }
 

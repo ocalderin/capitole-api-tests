@@ -19,7 +19,6 @@ public class PetApiSteps {
     private static final String PETS_DATA_FILENAME = "PetsData";
     private static final String PETS_WITH_SAME_NAME_DATA_FILENAME = "PetsWithSameName";
     private Response response;
-
     private TestContext testContext;
 
     public PetApiSteps(TestContext testContext) {

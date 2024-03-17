@@ -17,5 +17,4 @@ public class ScenarioContext {
     public Object getContext(final String key) {
         return context.get(key);
     }
-
 }

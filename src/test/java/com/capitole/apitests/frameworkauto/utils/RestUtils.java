@@ -8,8 +8,6 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
-import java.util.Map;
-
 import static io.restassured.RestAssured.given;
 
 public class RestUtils {
@@ -24,17 +22,8 @@ public class RestUtils {
                 .addFilter(new ResponseLoggingFilter()).build();
     }
 
-    public static void resetBaseUri() {
-        RestAssured.baseURI = null;
-        requestSpecification = null;
-    }
-
     public static Response doGet(final String path) {
         return given().spec(requestSpecification).get(path).andReturn();
-    }
-
-    public static Response doGet(final String path, final Map<String, String> params) {
-        return given().spec(requestSpecification).params(params).get(path).andReturn();
     }
 
     public static Response doPost(final String path, final Object body) {

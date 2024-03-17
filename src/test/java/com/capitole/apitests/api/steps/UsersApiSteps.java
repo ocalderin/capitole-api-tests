@@ -18,7 +18,6 @@ import java.util.Map;
 public class UsersApiSteps {
     private static final String USER_DATA_FILENAME = "UserData";
     private Response response;
-
     private TestContext testContext;
 
     public UsersApiSteps(TestContext testContext) {
@@ -38,6 +37,7 @@ public class UsersApiSteps {
                 Integer.parseInt(row.get("userStatus"))
         );
     }
+
     @Given("A request to created an user is executed")
     public void aRequestToCreatedAnUserIsExecuted(final User user) {
         response = RestUtils.doPost(Routes.ROUTE_CREATE_USER, user);

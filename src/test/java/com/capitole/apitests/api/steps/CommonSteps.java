@@ -7,7 +7,6 @@ import org.junit.jupiter.api.Assertions;
 
 public class CommonSteps {
     private TestContext testContext;
-
     private Response response;
 
     public CommonSteps(TestContext testContext) {
