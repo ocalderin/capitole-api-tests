@@ -67,7 +67,7 @@ Also, all the output requested by the technical test is saved in the **data** fo
 Additionally, you can also run the automated tests on GitHub, using GitHub Actions. To do that:
 1. Go to https://github.com/ocalderin/capitole-api-tests
 2. Create a fork
-![Captura de pantalla 2024-03-17 a las 7 58 19 p  m](https://github.com/ocalderin/capitole-api-tests/assets/12141626/02099c7c-ed5f-4332-852f-a8992f03cfac)
+![2](https://github.com/ocalderin/capitole-api-tests/assets/12141626/9959779c-47a2-4c4d-90f5-8fcfb42a7464)
 3. Click on the Actions button
 ![Captura de pantalla 2024-03-17 a las 1 05 52 p  m](https://github.com/ocalderin/capitole-api-tests/assets/12141626/6f35b8f0-8664-48f0-9c8a-1827d8d92726)
 4. Select the **Running Automated API Tests** workflow
